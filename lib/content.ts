@@ -105,3 +105,41 @@ export const planIncludes = [
   { label: "Slack Support", icon: { src: "/assets/inc-slack.svg", width: 37.5, height: 30 } },
   { label: "NDA Protection", icon: { src: "/assets/inc-nda.svg", width: 30, height: 30 } },
 ];
+
+// ---------- Contact page ----------
+
+export const contactServices = ["SaaS Product Design", "MVP Design Sprint", "UX Audit & Strategy", "Design System", "Mobile App Design"];
+export const contactBudgets = ["Under $5k", "$5k – $10k", "$10k – $25k", "$25k+"];
+
+export const contactCards = [
+  {
+    icon: "/assets/icon-mail.svg",
+    title: "Email us",
+    body: "Drop us a line and we’ll get back to you within one business day.",
+    link: { label: "hello@tenloop.design", href: "mailto:hello@tenloop.design" },
+  },
+  {
+    icon: "/assets/icon-calendar.svg",
+    title: "Book a call",
+    body: "Prefer to talk it through? Pick a 30-minute slot that suits you.",
+    link: { label: "Schedule a discovery call →", href: "#" },
+  },
+  {
+    icon: "/assets/icon-location.svg",
+    title: "Visit us",
+    body: "Based in Berlin, Germany — working with SaaS teams worldwide.",
+    link: { label: "Get directions →", href: "https://maps.google.com/?q=Berlin" },
+  },
+];
+
+const devAnswer = "We deliver developer-ready files and handoff specs, and can recommend trusted development partners for build.";
+export const faqs = [
+  { q: "How long does a typical project take?", a: "Most projects take 2–6 weeks depending on scope. MVP design sprints are delivered in 2 weeks; full product redesigns usually take 4–6 weeks." },
+  { q: "Do you work with early-stage startups?", a: "Yes — from pre-seed founders validating an idea to scaling SaaS teams. Our Starter plan is built for early stages." },
+  { q: "What do I need to prepare before we start?", a: "A short brief, access to your current product (if any) and 30 minutes for a kickoff call. We handle the rest." },
+  { q: "Do you also handle development?", a: devAnswer },
+  // The next three items are duplicated in the Figma design — replace with real questions.
+  { q: "Do you also handle development?", a: devAnswer },
+  { q: "Do you also handle development?", a: devAnswer },
+  { q: "Do you also handle development?", a: devAnswer },
+];
