@@ -33,19 +33,21 @@ export function SectionHead({
   accent,
   sub,
   subClassName = "",
+  as = "h2",
 }: {
   badge: { icon: Icon; label: string; soft?: boolean };
   lead: string;
   accent: string;
   sub?: string;
   subClassName?: string;
+  as?: "h1" | "h2";
 }) {
   return (
     <div className="section__head">
       <Badge icon={badge.icon} soft={badge.soft}>
         {badge.label}
       </Badge>
-      <DisplayHeading lead={lead} accent={accent} />
+      <DisplayHeading lead={lead} accent={accent} as={as} />
       {sub && <p className={`section__sub ${subClassName}`}>{sub}</p>}
     </div>
   );

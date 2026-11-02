@@ -25,6 +25,7 @@ export default function ContactPage() {
             accent="users love"
             sub="Tell us where your product is today and where you want it to go. We’ll reply within 24 hours with clear next steps."
             subClassName="contact-hero__sub"
+            as="h1"
           />
         </section>
 
